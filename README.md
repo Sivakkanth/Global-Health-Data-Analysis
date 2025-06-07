@@ -14,7 +14,10 @@ Ensure the following software is installed on your system:
 - **Java Development Kit (JDK)** – Version 8 or above  
 - **Apache Hadoop** – Version 3.0+  
 - **Apache Maven** – For dependency management  
-- **IDE** – IntelliJ IDEA / Eclipse for Java development  
+- **IDE** – IntelliJ IDEA / Eclipse for Java development
+
+## Dataset Link
+https://www.kaggle.com/datasets/malaiarasugraj/global-health-statistics
 
 ## Setup Instructions
 
@@ -27,8 +30,8 @@ Follow the steps below or refer to the [Hadoop Official Setup Guide](https://had
 
 # Set environment variables
 # Add the following to your system environment variables:
-# HADOOP_HOME = C:\path\to\hadoop
-# JAVA_HOME = C:\path\to\jdk
+HADOOP_HOME = C:\path\to\hadoop
+JAVA_HOME = C:\path\to\jdk
 # Add %HADOOP_HOME%\bin and %JAVA_HOME%\bin to the PATH variable
 
 # Format Namenode - only the first time
@@ -38,7 +41,7 @@ hdfs namenode -format
 start-dfs.cmd
 start-yarn.cmd
 ```
-## Setup project
+## 2 Setup project
 
 ```bash
 # Clone or download the project repository
