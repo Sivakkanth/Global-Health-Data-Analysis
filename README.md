@@ -28,18 +28,20 @@ Follow the steps below or refer to the [Hadoop Official Setup Guide](https://had
 # Download Hadoop
 # Visit: https://hadoop.apache.org/releases.html and download a stable version
 
-# Set environment variables
-# Add the following to your system environment variables:
-HADOOP_HOME = C:\path\to\hadoop
-JAVA_HOME = C:\path\to\jdk
-# Add %HADOOP_HOME%\bin and %JAVA_HOME%\bin to the PATH variable
+# Follow the instructions to install hadoop
+https://medium.com/@riturajrudra18/how-to-install-hadoop-in-windows-10-and-11-9a306814ccf0
 
+# Running hadoop
 # Format Namenode - only the first time
 hdfs namenode -format
 
 # Start Hadoop daemons
 start-dfs.cmd
 start-yarn.cmd
+
+# checking whether correctly install namenode and datanode command
+jps
+
 ```
 ## 2 Setup project
 
