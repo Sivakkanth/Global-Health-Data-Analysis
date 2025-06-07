@@ -11,8 +11,8 @@ This project performs large scale data analysis on a global health dataset using
 ## Prerequisites
 Ensure the following software is installed on your system:
 
-- **Java Development Kit (JDK)** – Version 8 or above  
-- **Apache Hadoop** – Version 3.0+  
+- **Java Development Kit (JDK)** – Version 8 or 11
+- **Apache Hadoop** – Version 3.3.1  
 - **Apache Maven** – For dependency management  
 - **IDE** – IntelliJ IDEA / Eclipse for Java development
 
@@ -22,7 +22,7 @@ https://www.kaggle.com/datasets/malaiarasugraj/global-health-statistics
 ## Setup Instructions
 
 ### 1. Install Apache Hadoop - Windows
-Follow the steps below or refer to the [Hadoop Official Setup Guide](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html):
+Follow the steps below or refer to the [Hadoop Official Setup Guide](https://hadoop.apache.org/release/3.3.1.html):
 
 ```bash
 # Download Hadoop
