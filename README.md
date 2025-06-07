@@ -26,7 +26,7 @@ Follow the steps below or refer to the [Hadoop Official Setup Guide](https://had
 
 ```bash
 # Download Hadoop
-# Visit: https://hadoop.apache.org/releases.html and download a stable version
+Visit: https://hadoop.apache.org/releases.html and download a stable version
 
 # Follow the instructions to install hadoop
 https://medium.com/@riturajrudra18/how-to-install-hadoop-in-windows-10-and-11-9a306814ccf0
