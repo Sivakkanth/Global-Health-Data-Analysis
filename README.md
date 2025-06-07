@@ -25,8 +25,8 @@ https://www.kaggle.com/datasets/malaiarasugraj/global-health-statistics
 Follow the steps below or refer to the [Hadoop Official Setup Guide](https://hadoop.apache.org/release/3.3.1.html):
 
 ```bash
-# Download Hadoop
-Visit: https://hadoop.apache.org/releases.html and download a stable version
+# Download Hadoop 3.3.1
+https://hadoop.apache.org/releases.html
 
 # Follow the instructions to install hadoop
 https://medium.com/@riturajrudra18/how-to-install-hadoop-in-windows-10-and-11-9a306814ccf0
