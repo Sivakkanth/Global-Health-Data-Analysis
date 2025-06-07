@@ -43,7 +43,7 @@ start-yarn.cmd
 jps
 
 ```
-## 2 Setup project
+## 2. Setup project
 
 ```bash
 # Clone or download the project repository
