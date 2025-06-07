@@ -55,24 +55,19 @@ http://localhost:8088/cluster
 git clone https://github.com/Sivakkanth/Global-Health-Data-Analysis.git
 cd global-health-mapreduce
 
-
 # Build the project using Maven
 mvn clean package
-
 
 # Create input folder
 hdfs dfs -mkdir /input
 
-
-# Put input file
+# Put the input file into hadoop
 hdfs dfs -put input/file/path /input
 
-
 # Perform mapreduce
-hadoop jar /jarfile/path /driver/path /input/path /output/path
+hadoop jar /jarfile/path /main/file/path /input/path /output/path
 
-
-# View the result
+# View the output result
 cat local_output/part-r-00000
 
 ```
