@@ -39,18 +39,41 @@ hdfs namenode -format
 start-dfs.cmd
 start-yarn.cmd
 
-# checking whether correctly install namenode and datanode command
+# Checking whether the namenode and datanode are working
 jps
+
+# Check whether the urls are working
+http://localhost:9870/
+http://localhost:8088/cluster
 
 ```
 ## 2. Setup project
 
 ```bash
+
 # Clone or download the project repository
 git clone https://github.com/Sivakkanth/Global-Health-Data-Analysis.git
 cd global-health-mapreduce
 
+
 # Build the project using Maven
 mvn clean package
+
+
+# Create input folder
+hdfs dfs -mkdir /input
+
+
+# Put input file
+hdfs dfs -put input/file/path /input
+
+
+# Perform mapreduce
+hadoop jar /jarfile/path /driver/path /input/path /output/path
+
+
+# View the result
+cat local_output/part-r-00000
+
 ```
 
