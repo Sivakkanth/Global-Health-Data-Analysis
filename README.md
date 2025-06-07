@@ -4,9 +4,9 @@
 This project performs large scale data analysis on a global health dataset using the MapReduce programming model. The objective is to discover meaningful patterns by executing five analytical tasks, each implemented through a custom reducer. 
 
 ## Team Members
-- EG/2020/3896  
-- EG/2020/4220  
-- EG/2020/4366  
+- EG/2020/3896 – Dilexsan H.A.L.
+- EG/2020/4220 – Sivakkanth K.
+- EG/2020/4366 – Nifras M.J.M.
 
 ## Prerequisites
 Ensure the following software is installed on your system:
