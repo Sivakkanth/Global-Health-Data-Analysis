@@ -26,9 +26,9 @@ Follow the steps below or refer to the [Hadoop Official Setup Guide](https://had
 
 ```bash
 # Download Hadoop 3.3.1
-https://hadoop.apache.org/releases.html
+https://hadoop.apache.org/release/3.3.1.html
 
-# Follow the instructions to install hadoop
+# Follow the instructions to configure files
 https://medium.com/@riturajrudra18/how-to-install-hadoop-in-windows-10-and-11-9a306814ccf0
 
 # Running hadoop
