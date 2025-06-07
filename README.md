@@ -11,8 +11,8 @@ This project performs large scale data analysis on a global health dataset using
 ## Prerequisites
 Ensure the following software is installed on your system:
 
-- **Java Development Kit (JDK)** – Version 8 or above  
-- **Apache Hadoop** – Version 3.0+  
+- **Java Development Kit (JDK)** – Version 8 or 11
+- **Apache Hadoop** – Version 3.3.1  
 - **Apache Maven** – For dependency management  
 - **IDE** – IntelliJ IDEA / Eclipse for Java development
 
@@ -22,33 +22,53 @@ https://www.kaggle.com/datasets/malaiarasugraj/global-health-statistics
 ## Setup Instructions
 
 ### 1. Install Apache Hadoop - Windows
-Follow the steps below or refer to the [Hadoop Official Setup Guide](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html):
+Follow the steps below or refer to the [Hadoop Official Setup Guide](https://hadoop.apache.org/release/3.3.1.html):
 
 ```bash
-# Download Hadoop
-# Visit: https://hadoop.apache.org/releases.html and download a stable version
+# Download Hadoop 3.3.1
+https://hadoop.apache.org/release/3.3.1.html
 
-# Set environment variables
-# Add the following to your system environment variables:
-HADOOP_HOME = C:\path\to\hadoop
-JAVA_HOME = C:\path\to\jdk
-# Add %HADOOP_HOME%\bin and %JAVA_HOME%\bin to the PATH variable
+# Follow the instructions to configure files
+https://medium.com/@riturajrudra18/how-to-install-hadoop-in-windows-10-and-11-9a306814ccf0
 
+# Running hadoop
 # Format Namenode - only the first time
 hdfs namenode -format
 
 # Start Hadoop daemons
 start-dfs.cmd
 start-yarn.cmd
+
+# Checking whether the namenode and datanode are working
+jps
+
+# Check whether the urls are working
+http://localhost:9870/
+http://localhost:8088/cluster
+
 ```
-## 2 Setup project
+## 2. Setup project
 
 ```bash
+
 # Clone or download the project repository
 git clone https://github.com/Sivakkanth/Global-Health-Data-Analysis.git
 cd global-health-mapreduce
 
 # Build the project using Maven
 mvn clean package
+
+# Create input folder
+hdfs dfs -mkdir /input
+
+# Put the input file into hadoop
+hdfs dfs -put input/file/path /input
+
+# Perform mapreduce
+hadoop jar /jarfile/path /main/file/path /input/path /output/path
+
+# View the output result
+cat local_output/part-r-00000
+
 ```
 
